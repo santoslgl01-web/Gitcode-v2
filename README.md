@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>Gitode-v2</h1>
+    <h1>GitCode-v2</h1>
     <strong>Tech stack: Next.js 13, React, Tailwind, ICP, Chainlink</strong>
 </div>
 <br>
@@ -11,19 +11,43 @@
         <img src="https://img.shields.io/badge/setup-automated-blue?logo=gitpod" alt="Gitpod">
     </a>
      <a href="https://twitter.com/Aditya04183">
-        <img src="https://img.shields.io/twitter/follow/Aditya04183?style=social" alt="Aaditya Singh Twitter">
+        <img src="https://img.shields.io/twitter/follow/Aditya04183?style=social" alt="Aditya Singh Twitter">
     </a>
 </div>
 <div align="center">
     <br>
     <a href="https://www.adityasingh.live/"><b>Visit »</b></a>
     <br>
-   
 </div>
+
+## Overview
+
+GitCode-v2 is a Next.js application for discovering sponsor projects and browsing on-chain bounties. The UI includes dedicated pages for featured projects, open bounties, and creating or claiming bounty submissions.
+
+## Tech Stack
+
+- Next.js 13
+- React 18
+- Tailwind CSS
+- Ethers.js
+- Hardhat
+- Chainlink
+- ICP
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, or pnpm
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the development server
 
 ```bash
 npm run dev
@@ -35,21 +59,30 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `npm run dev` — start the Next.js development server
+- `npm run build` — create a production build
+- `npm run start` — start the production server
+- `npm run lint` — run contract linting, Prettier checks, and Next.js linting
+- `npm run test` — run the unit test suite
+- `npm run compile` — compile Hardhat contracts
+
+## Project Structure
+
+- `src/pages/` — Next.js routes for the landing page, bounties, projects, and flows such as create/apply/claim
+- `components/` — reusable UI sections and page components
+- `contracts/` — smart contract sources and generated artifacts used by the app
+- `libs/` — task helpers, contract utilities, and supporting scripts
+- `public/` — static assets and project images
+
+## Notes
+
+- The homepage currently announces GitCode-v3 as "Coming Soon..." while this repository contains the GitCode-v2 codebase.
+- The bounties page reads blockchain data via `RPC_URL` and `PRIVATE_KEY` environment variables.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Hardhat Documentation](https://hardhat.org/docs)
+- [Chainlink Documentation](https://docs.chain.link/)
